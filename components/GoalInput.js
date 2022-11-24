@@ -4,16 +4,16 @@ const GoalInput = ( props ) => {
 	return (
 		<Modal visible={ props.visible } animationType="slide">
 			<View style={ styles.inputContainer }>
-				<Image style={styles.image} source={require('../assets/images/icon.png')} />
+				<Image style={ styles.image } source={ { uri: 'https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' } } />
 				<TextInput style={ styles.textInput } placeholder='Your course goal!'
 					onChangeText={ props.goalInputHandler } value={ props.enteredGoalText }
 				/>
 				<View style={ styles.buttonContainer }>
 					<View style={ styles.button }>
-						<Button title='Add Goal' onPress={ props.addGoalHandler } />
+						<Button title='Add Goal' onPress={ props.addGoalHandler } color="#b180f0" />
 					</View>
 					<View style={ styles.button }>
-						<Button title="Cancel" onPress={ props.endAddGoalHandler } />
+						<Button title="Cancel" onPress={ props.endAddGoalHandler } color="#f31282" />
 					</View>
 				</View>
 			</View>
@@ -31,7 +31,8 @@ const styles = StyleSheet.create( {
 	image: {
 		width: 100,
 		height: 100,
-		margin: 20
+		margin: 20,
+		borderRadius: 100
 	},
 	textInput: {
 		borderWidth: 1,
