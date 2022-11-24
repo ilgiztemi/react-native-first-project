@@ -36,11 +36,14 @@ const styles = StyleSheet.create( {
 	},
 	textInput: {
 		borderWidth: 1,
-		borderColor: '#cccccc',
+		borderColor: '#e4d0ff',
+		backgroundColor: "#e4d0ff",
+		borderRadius: 6,
+		color: '#120438',
 		width: '90%',
 		marginRight: 8,
 		marginBottom: 16,
-		padding: 8,
+		padding: 16,
 	},
 	buttonContainer: {
 		flexDirection: 'row'
